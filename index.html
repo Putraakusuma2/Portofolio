@@ -38,8 +38,9 @@
         </div>
     </header>
 
-    <section id="beranda" class="hero-bg text-white py-20 md:py-32">
-        <div class="container mx-auto px-6">
+    <section id="beranda" class="hero-bg text-white py-20 md:py-32 relative" style="background: url('img/me.jpg') center center/cover no-repeat;">
+        <div class="absolute inset-0 bg-gray-900 bg-opacity-70"></div>
+        <div class="container mx-auto px-6 relative z-10">
             <div class="flex flex-col md:flex-row items-center justify-between gap-10">
                 <div class="md:w-1/2 text-center md:text-left">
                     <h1 class="text-4xl md:text-6xl font-bold mb-4">Halo, Saya Putra!</h1>
@@ -50,7 +51,6 @@
                     <p class="text-base md:text-lg text-sky-200 font-medium mt-2">Membangun solusi digital kreatif & modern</p>
                 </div>
                 <div class="md:w-1/2 flex justify-center md:justify-end mt-10 md:mt-0">
-                    <img src="https://placehold.co/150x150/E2E8F0/333?text=Foto+Anda" alt="Foto Profil [Nama Anda]" class="w-32 h-32 md:w-56 md:h-56 rounded-full border-4 border-sky-400 shadow-lg object-cover" />
                 </div>
             </div>
         </div>
@@ -130,9 +130,9 @@
             <h2 class="section-title">My Project</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <div class="project-card">
-                    <img src="https://placehold.co/600x400/3498db/ffffff?text=Proyek+1" alt="Gambar Proyek 1" class="w-full h-48 object-cover">
+                    <img src="img/project/andari.png" alt="Gambar Proyek 1" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Nama Proyek Keren 1</h3>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">UI/UX Design Andari</h3>
                         <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Deskripsi singkat tentang proyek ini, tantangan yang dihadapi, dan solusi yang diterapkan. Fokus pada kontribusi Anda.</p>
                         <div class="mb-4">
                             <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-sky-600 bg-sky-200 dark:bg-sky-700 dark:text-sky-200 last:mr-0 mr-1">
@@ -149,9 +149,9 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="https://placehold.co/600x400/2ecc71/ffffff?text=Proyek+2" alt="Gambar Proyek 2" class="w-full h-48 object-cover">
+                    <img src="img/project/heritagekotagede.png" alt="Gambar Proyek 2" class="w-full h-48 object-cover">
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Aplikasi Analisis Data</h3>
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Web Heritage Kotagede</h3>
                         <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Proyek ini berfokus pada analisis data penjualan untuk mengidentifikasi tren dan memberikan rekomendasi bisnis.</p>
                          <div class="mb-4">
                             <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-sky-600 bg-sky-200 dark:bg-sky-700 dark:text-sky-200 last:mr-0 mr-1">
@@ -170,21 +170,25 @@
                     </div>
                 </div>
                 <div class="project-card">
-                    <img src="https://placehold.co/600x400/e74c3c/ffffff?text=Proyek+3" alt="Gambar Proyek 3" class="w-full h-48 object-cover">
+                    <div class="relative w-full h-48">
+                        <img id="project3-img" src="img/project/rusun.png" alt="Gambar Proyek 3" class="w-full h-48 object-cover transition-opacity duration-700" />
+                        <button id="prevProject3" class="absolute left-2 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-sky-700 rounded-full p-1 shadow-md focus:outline-none"><i class="fas fa-chevron-left"></i></button>
+                        <button id="nextProject3" class="absolute right-2 top-1/2 -translate-y-1/2 bg-white bg-opacity-70 hover:bg-opacity-100 text-sky-700 rounded-full p-1 shadow-md focus:outline-none"><i class="fas fa-chevron-right"></i></button>
+                    </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Desain UI/UX Aplikasi Mobile</h3>
-                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Merancang antarmuka pengguna dan pengalaman pengguna untuk aplikasi mobile inovatif di bidang [sebutkan bidangnya].</p>
+                        <h3 class="text-xl font-semibold mb-2 text-white">Peta Bantuan Perumahan</h3>
+                        <p class="text-white text-sm mb-4">Merancang antarmuka pengguna dan pengalaman pengguna untuk aplikasi mobile inovatif di bidang [sebutkan bidangnya].</p>
                          <div class="mb-4">
-                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-sky-600 bg-sky-200 dark:bg-sky-700 dark:text-sky-200 last:mr-0 mr-1">
+                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-sky-600 bg-sky-200 last:mr-0 mr-1">
                                 Figma
                             </span>
-                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-sky-600 bg-sky-200 dark:bg-sky-700 dark:text-sky-200 last:mr-0 mr-1">
+                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-sky-600 bg-sky-200 last:mr-0 mr-1">
                                 Adobe XD
                             </span>
                         </div>
                         <div class="flex space-x-4">
-                            <a href="#" target="_blank" class="text-sky-500 hover:text-sky-700 dark:text-sky-400 dark:hover:text-sky-300 font-medium"><i class="fab fa-behance mr-1"></i> Behance</a>
-                             <a href="#" target="_blank" class="text-sky-500 hover:text-sky-700 dark:text-sky-400 dark:hover:text-sky-300 font-medium"><i class="fas fa-file-alt mr-1"></i> Case Study</a>
+                            <a href="#" target="_blank" class="text-sky-500 hover:text-sky-700 font-medium"><i class="fab fa-behance mr-1"></i> Behance</a>
+                             <a href="#" target="_blank" class="text-sky-500 hover:text-sky-700 font-medium"><i class="fas fa-file-alt mr-1"></i> Case Study</a>
                         </div>
                     </div>
                 </div>
@@ -196,9 +200,6 @@
         <div class="container mx-auto px-6">
             <h2 class="section-title">Contact</h2>
             <div class="max-w-2xl mx-auto bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
-                <p class="text-center text-gray-700 dark:text-gray-300 mb-8">
-                    Saya selalu terbuka untuk diskusi, kolaborasi, atau peluang baru. Jangan ragu untuk menghubungi saya!
-                </p>
                 <form action="#" method="POST"> <div class="mb-6">
                         <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Nama Lengkap</label>
                         <input type="text" name="name" id="name" required class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-sky-500 focus:border-sky-500 dark:bg-gray-700 dark:text-white transition-colors">

@@ -75,4 +75,50 @@ document.addEventListener('DOMContentLoaded', function() {
             'Tech Enthusiast'
         ]);
     }
+
+    // Slider otomatis untuk gambar project 3
+    const project3Images = [
+        'img/project/rusun.png',
+        'img/project/bsps.png',
+        'img/project/sdgs.png'
+    ];
+    let project3Index = 0;
+    const project3Img = document.getElementById('project3-img');
+    const prevProject3 = document.getElementById('prevProject3');
+    const nextProject3 = document.getElementById('nextProject3');
+
+    function showProject3Image(idx) {
+        if (!project3Img) return;
+        project3Img.style.opacity = 0;
+        setTimeout(() => {
+            project3Img.src = project3Images[idx];
+            project3Img.style.opacity = 1;
+        }, 300);
+    }
+    if (project3Img) {
+        let autoSlideProject3 = setInterval(() => {
+            project3Index = (project3Index + 1) % project3Images.length;
+            showProject3Image(project3Index);
+        }, 3500);
+        if (prevProject3) {
+            prevProject3.onclick = () => {
+                project3Index = (project3Index - 1 + project3Images.length) % project3Images.length;
+                showProject3Image(project3Index);
+            };
+        }
+        if (nextProject3) {
+            nextProject3.onclick = () => {
+                project3Index = (project3Index + 1) % project3Images.length;
+                showProject3Image(project3Index);
+            };
+        }
+        // Pause on hover
+        project3Img.parentElement.addEventListener('mouseenter', () => clearInterval(autoSlideProject3));
+        project3Img.parentElement.addEventListener('mouseleave', () => {
+            autoSlideProject3 = setInterval(() => {
+                project3Index = (project3Index + 1) % project3Images.length;
+                showProject3Image(project3Index);
+            }, 3500);
+        });
+    }
 });
