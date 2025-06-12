@@ -17,45 +17,6 @@ mobileMenuLinks.forEach(link => {
 // Script untuk tahun sekarang di footer
 document.getElementById('currentYear').textContent = new Date().getFullYear();
 
-// Script untuk Dark Mode Toggle
-const darkModeToggle = document.getElementById('darkModeToggle');
-const darkModeIcon = document.getElementById('darkModeIcon');
-const darkModeLabel = document.getElementById('darkModeLabel');
-const htmlElement = document.documentElement;
-const moonIcon = '<i class="fas fa-moon"></i>';
-const sunIcon = '<i class="fas fa-sun"></i>';
-
-function setDarkModeUI(isDark) {
-    if (isDark) {
-        darkModeIcon.innerHTML = sunIcon;
-        darkModeLabel.textContent = 'Light';
-    } else {
-        darkModeIcon.innerHTML = moonIcon;
-        darkModeLabel.textContent = 'Dark';
-    }
-}
-
-// Cek preferensi dark mode dari localStorage
-if (localStorage.getItem('darkMode') === 'enabled' || 
-    (!('darkMode' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    htmlElement.classList.add('dark');
-    setDarkModeUI(true);
-} else {
-    htmlElement.classList.remove('dark');
-    setDarkModeUI(false);
-}
-
-darkModeToggle.addEventListener('click', () => {
-    htmlElement.classList.toggle('dark');
-    const isDark = htmlElement.classList.contains('dark');
-    if (isDark) {
-        localStorage.setItem('darkMode', 'enabled');
-    } else {
-        localStorage.setItem('darkMode', 'disabled');
-    }
-    setDarkModeUI(isDark);
-});
-
 // Typewriting effect for Beranda section
 function typeWriter(element, texts, speed = 80, pause = 1200) {
     let textIndex = 0;
@@ -88,6 +49,24 @@ function typeWriter(element, texts, speed = 80, pause = 1200) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Mobile menu
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileMenuButton && mobileMenu) {
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    }
+    // Footer year
+    const year = document.getElementById('currentYear');
+    if (year) year.textContent = new Date().getFullYear();
+    // Typewriter
     const typeTarget = document.getElementById('typewriter-text');
     if (typeTarget) {
         typeWriter(typeTarget, [
