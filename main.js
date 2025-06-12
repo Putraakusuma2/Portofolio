@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const typeTarget = document.getElementById('typewriter-text');
     if (typeTarget) {
         typeWriter(typeTarget, [
-            'Seorang Front-end Web Developer',
+            'Front-end Web Developer',
             'UI/UX Designer',
             'Tech Enthusiast'
         ]);
