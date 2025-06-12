@@ -18,7 +18,7 @@ html.dark .section-title {
 }
 .project-card {
     /* Tailwind utility: bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 */
-    background-color: #ffffff;
+    background-color: #1f2937;
     border-radius: 0.5rem;
     box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
     overflow: hidden;
@@ -32,7 +32,7 @@ html.dark .project-card {
 }
 .skill-tag {
     /* Tailwind utility: bg-sky-100 dark:bg-sky-700 text-sky-700 dark:text-sky-200 px-3 py-1 rounded-full text-sm font-medium */
-    background-color: #e0f2fe;
+    background-color: #1f2937;
     color: #0369a1;
     padding: 0.25rem 0.75rem;
     border-radius: 9999px;
@@ -61,7 +61,7 @@ html {
 /* Card untuk My Skill */
 .skill-card {
     /* Tailwind: bg-white dark:bg-gray-800 rounded-lg shadow-md p-4 flex flex-col items-center transition-transform duration-300 */
-    background-color: #ffffff;
+    background-color: #1f2937;
     border-radius: 0.5rem;
     box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
     padding: 1rem;
