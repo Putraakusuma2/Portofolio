@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PutraKuauma Portofolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" xintegrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+    <header class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50 transition-colors duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-sky-600 dark:text-sky-400">PortofolioKu</a>
+            <div class="space-x-4 hidden md:flex">
+                <a href="#beranda" class="text-gray-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Beranda</a>
+                <a href="#tentang" class="text-gray-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Tentang Saya</a>
+                <a href="#keahlian" class="text-gray-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Keahlian</a>
+                <a href="#proyek" class="text-gray-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Proyek</a>
+                <a href="#kontak" class="text-gray-700 dark:text-gray-300 hover:text-sky-600 dark:hover:text-sky-400 transition-colors">Kontak</a>
+            </div>
+            <div class="flex items-center">
+                <button id="darkModeToggle" class="ml-4 p-2 rounded-md text-gray-600 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none flex items-center gap-2">
+                    <span id="darkModeIcon"><i class="fas fa-moon"></i></span>
+                    <span id="darkModeLabel" class="text-sm font-medium">Dark</span>
+                </button>
+                <button id="mobileMenuButton" class="md:hidden ml-4 text-gray-700 dark:text-gray-300 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <div id="mobileMenu" class="md:hidden hidden bg-white dark:bg-gray-800 py-2 transition-colors duration-300">
+            <a href="#beranda" class="block px-6 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Beranda</a>
+            <a href="#tentang" class="block px-6 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Tentang Saya</a>
+            <a href="#keahlian" class="block px-6 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Keahlian</a>
+            <a href="#proyek" class="block px-6 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Proyek</a>
+            <a href="#kontak" class="block px-6 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700">Kontak</a>
+        </div>
+    </header>
+
+    <section id="beranda" class="hero-bg text-white py-20 md:py-32 min-h-screen">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Halo, Saya Putra!</h1>
+                    <hr class="border-t-2 border-sky-400 w-82 mx-auto md:mx-0 my-6 opacity-80">
+                    <p class="text-xl md:text-2xl mb-8 text-gray-300">
+                        <span id="typewriter-text"></span>
+                    </p>
+                </div>
+                <div class="md:w-1/2 flex justify-center md:justify-end mt-10 md:mt-0">
+                    <img src="https://placehold.co/150x150/E2E8F0/333?text=Foto+Anda" alt="Foto Profil [Nama Anda]" class="w-32 h-32 md:w-56 md:h-56 rounded-full border-4 border-sky-400 shadow-lg object-cover" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="py-16 md:py-24 bg-white dark:bg-gray-800 transition-colors duration-300">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">About Me</h2>
+            <div class="max-w-3xl mx-auto text-center text-gray-700 dark:text-gray-300 space-y-6">
+                <p class="text-lg leading-relaxed">
+                    Selamat datang di portofolio saya! Saya adalah seorang profesional IT dengan gairah untuk [sebutkan minat utama Anda di IT, misal: mengembangkan aplikasi web yang inovatif, menganalisis data untuk menemukan insight berharga, atau menjaga keamanan sistem informasi]. Saya selalu bersemangat untuk belajar teknologi baru dan menerapkannya untuk memecahkan masalah dunia nyata.
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Saya memiliki pengalaman dalam [sebutkan beberapa pengalaman kunci atau fokus studi Anda]. Tujuan karir saya adalah untuk [sebutkan tujuan karir Anda, misal: berkontribusi pada proyek-proyek berdampak besar, menjadi ahli di bidang tertentu, atau memimpin tim teknologi].
+                </p>
+                <p class="text-lg leading-relaxed">
+                    Di luar dunia kode dan data, saya juga menikmati [sebutkan hobi atau minat lain Anda secara singkat].
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="keahlian" class="py-16 md:py-24 bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">My Skill</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 text-sky-600 dark:text-sky-400">Bahasa Pemrograman</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">PHP</span>
+                        </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 text-sky-600 dark:text-sky-400">Framework & Library</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Spring Boot</span>
+                        <span class="skill-tag">Laravel</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        </div>
+                </div>
+                <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 text-sky-600 dark:text-sky-400">Tools & Platform</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">Git & GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Figma</span>
+                        <span class="skill-tag">VS Code</span>
+                        </div>
+                </div>
+                 <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold mb-4 text-sky-600 dark:text-sky-400">Database</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyek" class="py-16 md:py-24 bg-white dark:bg-gray-800 transition-colors duration-300">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">My Project</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/3498db/ffffff?text=Proyek+1" alt="Gambar Proyek 1" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Nama Proyek Keren 1</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Deskripsi singkat tentang proyek ini, tantangan yang dihadapi, dan solusi yang diterapkan. Fokus pada kontribusi Anda.</p>
+                        <div class="mb-4">
+                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-sky-600 bg-sky-200 dark:bg-sky-700 dark:text-sky-200 last:mr-0 mr-1">
+                                React
+                            </span>
+                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-sky-600 bg-sky-200 dark:bg-sky-700 dark:text-sky-200 last:mr-0 mr-1">
+                                Node.js
+                            </span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" target="_blank" class="text-sky-500 hover:text-sky-700 dark:text-sky-400 dark:hover:text-sky-300 font-medium"><i class="fab fa-github mr-1"></i> GitHub</a>
+                            <a href="#" target="_blank" class="text-sky-500 hover:text-sky-700 dark:text-sky-400 dark:hover:text-sky-300 font-medium"><i class="fas fa-external-link-alt mr-1"></i> Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/2ecc71/ffffff?text=Proyek+2" alt="Gambar Proyek 2" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Aplikasi Analisis Data</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Proyek ini berfokus pada analisis data penjualan untuk mengidentifikasi tren dan memberikan rekomendasi bisnis.</p>
+                         <div class="mb-4">
+                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-sky-600 bg-sky-200 dark:bg-sky-700 dark:text-sky-200 last:mr-0 mr-1">
+                                Python
+                            </span>
+                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-sky-600 bg-sky-200 dark:bg-sky-700 dark:text-sky-200 last:mr-0 mr-1">
+                                Pandas
+                            </span>
+                             <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-sky-600 bg-sky-200 dark:bg-sky-700 dark:text-sky-200 last:mr-0 mr-1">
+                                Tableau
+                            </span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" target="_blank" class="text-sky-500 hover:text-sky-700 dark:text-sky-400 dark:hover:text-sky-300 font-medium"><i class="fab fa-github mr-1"></i> GitHub</a>
+                            </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://placehold.co/600x400/e74c3c/ffffff?text=Proyek+3" alt="Gambar Proyek 3" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-gray-800 dark:text-white">Desain UI/UX Aplikasi Mobile</h3>
+                        <p class="text-gray-600 dark:text-gray-400 text-sm mb-4">Merancang antarmuka pengguna dan pengalaman pengguna untuk aplikasi mobile inovatif di bidang [sebutkan bidangnya].</p>
+                         <div class="mb-4">
+                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-sky-600 bg-sky-200 dark:bg-sky-700 dark:text-sky-200 last:mr-0 mr-1">
+                                Figma
+                            </span>
+                            <span class="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-sky-600 bg-sky-200 dark:bg-sky-700 dark:text-sky-200 last:mr-0 mr-1">
+                                Adobe XD
+                            </span>
+                        </div>
+                        <div class="flex space-x-4">
+                            <a href="#" target="_blank" class="text-sky-500 hover:text-sky-700 dark:text-sky-400 dark:hover:text-sky-300 font-medium"><i class="fab fa-behance mr-1"></i> Behance</a>
+                             <a href="#" target="_blank" class="text-sky-500 hover:text-sky-700 dark:text-sky-400 dark:hover:text-sky-300 font-medium"><i class="fas fa-file-alt mr-1"></i> Case Study</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kontak" class="py-16 md:py-24 bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+        <div class="container mx-auto px-6">
+            <h2 class="section-title">Contact</h2>
+            <div class="max-w-2xl mx-auto bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
+                <p class="text-center text-gray-700 dark:text-gray-300 mb-8">
+                    Saya selalu terbuka untuk diskusi, kolaborasi, atau peluang baru. Jangan ragu untuk menghubungi saya!
+                </p>
+                <form action="#" method="POST"> <div class="mb-6">
+                        <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Nama Lengkap</label>
+                        <input type="text" name="name" id="name" required class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-sky-500 focus:border-sky-500 dark:bg-gray-700 dark:text-white transition-colors">
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Alamat Email</label>
+                        <input type="email" name="email" id="email" required class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-sky-500 focus:border-sky-500 dark:bg-gray-700 dark:text-white transition-colors">
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Pesan Anda</label>
+                        <textarea name="message" id="message" rows="4" required class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-lg focus:ring-sky-500 focus:border-sky-500 dark:bg-gray-700 dark:text-white transition-colors"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-3 px-8 rounded-lg transition-colors duration-300 shadow-md">
+                            Kirim Pesan
+                        </button>
+                    </div>
+                </form>
+                <div class="mt-10 text-center">
+                    <p class="text-gray-700 dark:text-gray-300 mb-2">Atau temukan saya di:</p>
+                    <div class="flex justify-center space-x-6">
+                        <a href="mailto:emailanda@example.com" class="text-gray-500 dark:text-gray-400 hover:text-sky-500 dark:hover:text-sky-400 transition-colors">
+                            <i class="fas fa-envelope fa-2x"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/usernameanda" target="_blank" class="text-gray-500 dark:text-gray-400 hover:text-sky-500 dark:hover:text-sky-400 transition-colors">
+                            <i class="fab fa-linkedin fa-2x"></i>
+                        </a>
+                        <a href="https://github.com/usernameanda" target="_blank" class="text-gray-500 dark:text-gray-400 hover:text-sky-500 dark:hover:text-sky-400 transition-colors">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 dark:bg-black text-gray-300 dark:text-gray-500 py-8 text-center transition-colors duration-300">
+        <div class="container mx-auto px-6">
+            <p>&copy; <span id="currentYear"></span> PutraKusuma2. Dibuat dengan <i class="fas fa-heart text-red-500"></i> dan Tailwind CSS.</p>
+            <p class="text-sm mt-1">Semua Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+
+</body>
+</html>

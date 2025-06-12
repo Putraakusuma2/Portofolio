@@ -1,0 +1,62 @@
+body {
+    font-family: 'Inter', sans-serif;
+}
+.hero-bg {
+    background-color: #1a202c; /* Warna gelap untuk hero */
+}
+.section-title {
+    /* Tailwind utility: text-3xl font-bold text-center mb-12 text-gray-800 dark:text-white */
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #2d3748;
+}
+html.dark .section-title {
+    color: #fff;
+}
+.project-card {
+    /* Tailwind utility: bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 */
+    background-color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+html.dark .project-card {
+    background-color: #1f2937;
+}
+.project-card:hover {
+    transform: scale(1.05);
+}
+.skill-tag {
+    /* Tailwind utility: bg-sky-100 dark:bg-sky-700 text-sky-700 dark:text-sky-200 px-3 py-1 rounded-full text-sm font-medium */
+    background-color: #e0f2fe;
+    color: #0369a1;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+html.dark .skill-tag {
+    background-color: #0369a1;
+    color: #e0f2fe;
+}
+html {
+    scroll-behavior: smooth;
+}
+.dark-mode-toggle {
+    cursor: pointer;
+}
+.type-cursor {
+    display: inline-block;
+    color: #38bdf8;
+    animation: blink 1s steps(1) infinite;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+
